@@ -43,7 +43,8 @@ echo "Предложение 7 - <input type=\"text\" name=\"offer_seven\" value
 echo "Подвал письма:<br><textarea name=\"footer_body\" rows=\"4\" cols=\"50\">$footer_body</textarea><br><hr>";
 echo "Подпись письма:<br><textarea name=\"signature_body\" rows=\"6\" cols=\"50\">$signature_body</textarea><br><hr>";
 echo "Почта для отписки<br><input type=\"text\" name=\"unsubscribing_mail\" value=\"$unsubscribing_mail\" size=\"25\">";
-echo "<br><br><input type=\"submit\" value=\"Отправить сообщение\"></center></form></font>";
+echo "Введите пароль для подтверждения<br><input type=\"password\" name=\"password\" value=\"\" size=\"15\">";
+echo "<br><br><input type=\"submit\" value=\"Запустить рассылку\"></center></form></font>";
 
 print "<i>В базе<b> ". sizeof($maillist) ."</b> адресов</i><br><hr>";
 for ($i = 0; $i < sizeof ($maillist); $i++) print $maillist[$i]. "<br>";

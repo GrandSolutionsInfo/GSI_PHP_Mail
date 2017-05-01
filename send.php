@@ -1,4 +1,8 @@
 <?php
+$password = $_POST["password"];
+
+if ($pass == $password) {
+
 require_once "header.php";
 
 echo "<center><h2><b>Отравка писем запущена</b></h2></center><hr>";
@@ -98,4 +102,10 @@ echo "Готово!";
 */
 
 require_once "footer.php";
+}
+else {
+	require_once "header.php";
+	echo "<center><b>Неправильно введен пароль<b><br><a href="http:\/\/grand-solutions.info">Назад</a></center>"";
+	require_once "footer.php";
+}
 ?>
